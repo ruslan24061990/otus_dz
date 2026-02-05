@@ -36,8 +36,8 @@
 		<Metadata name="ChartOfAccounts.ОсновнойПланСчетов.Predefined" id="a9892867-7fe6-4b0a-a5c7-0d4b96e61189.9" configVersion="7e000f8ef6b93f409355a7e87d8afd1900000000"/>
 		<Metadata name="ChartOfCharacteristicTypes.ВидыСубконто" id="fd2a005a-f379-448a-ab14-099578f35722" configVersion="2b5be7016500534d8f9cf78412747b5300000000"/>
 		<Metadata name="ChartOfCharacteristicTypes.ВидыСубконто.Predefined" id="fd2a005a-f379-448a-ab14-099578f35722.7" configVersion="d3fec29cbbe726418f990174e413b1e500000000"/>
-		<Metadata name="CommonModule.Бухгалтерия" id="1d093135-a0c5-4987-8abc-a1050b9f57b0" configVersion="c1bce4c3e43013438f9fccf1b6d6e39200000000"/>
-		<Metadata name="CommonModule.Бухгалтерия.Module" id="1d093135-a0c5-4987-8abc-a1050b9f57b0.0" configVersion="86baf1820f70fc46a71da31d5d252f3500000000"/>
+		<Metadata name="CommonModule.Бухгалтерия" id="1d093135-a0c5-4987-8abc-a1050b9f57b0" configVersion="b6dfcff7e0e8e94785091cdd0fc30f5500000000"/>
+		<Metadata name="CommonModule.Бухгалтерия.Module" id="1d093135-a0c5-4987-8abc-a1050b9f57b0.0" configVersion="a01f2a247615224db7b890544f587f0900000000"/>
 		<Metadata name="Configuration.БухгалтерскийУчет" id="250c2e6f-d9f2-4b12-a4c5-307829a2bbef" configVersion="0c08da58f048ac4798a1c454ccc066ed00000000"/>
 		<Metadata name="Configuration.БухгалтерскийУчет.HomePageWorkArea" id="80ebb7d4-202d-4461-be6d-183c72dd0d56.8" configVersion="6274ccd50ea6594ba091a0be0e93678b00000000"/>
 		<Metadata name="Configuration.БухгалтерскийУчет.MainSectionCommandInterface" id="80ebb7d4-202d-4461-be6d-183c72dd0d56.9" configVersion="aa645c84db3acb44a982fcd6121875d500000000"/>
