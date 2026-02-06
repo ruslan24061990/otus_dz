@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Pages name="Группа1" id="1">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<Page name="Группа2" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остаток по счету</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="35"/>
+					<ChildItems>
+						<UsualGroup name="Группа3" id="7">
+							<Group>Horizontal</Group>
+							<Representation>StrongSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="36"/>
+							<ChildItems>
+								<Button name="НеПравильно" id="3">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.НеПравильно</CommandName>
+									<ExtendedTooltip name="НеПравильноРасширеннаяПодсказка" id="37"/>
+								</Button>
+								<Button name="Правильно" id="4">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.Правильно</CommandName>
+									<ExtendedTooltip name="ПравильноРасширеннаяПодсказка" id="38"/>
+								</Button>
+								<InputField name="Остаток" id="5">
+									<DataPath>Остаток</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Остаток по счету "Касса"</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ОстатокКонтекстноеМеню" id="6"/>
+									<ExtendedTooltip name="ОстатокРасширеннаяПодсказка" id="39"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа7" id="21">
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="40"/>
+							<ChildItems>
+								<Button name="ОстаткиПоВалютнымСчетам" id="22">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОстаткиПоВалютнымСчетам</CommandName>
+									<ExtendedTooltip name="ОстаткиПоВалютнымСчетамРасширеннаяПодсказка" id="41"/>
+								</Button>
+								<Table name="ТЗ" id="23">
+									<Representation>List</Representation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>ТЗ</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ТЗКонтекстноеМеню" id="24"/>
+									<AutoCommandBar name="ТЗКоманднаяПанель" id="25"/>
+									<ExtendedTooltip name="ТЗРасширеннаяПодсказка" id="42"/>
+									<SearchStringAddition name="ТЗСтрокаПоиска" id="43">
+										<AdditionSource>
+											<Item>ТЗ</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТЗСтрокаПоискаКонтекстноеМеню" id="44"/>
+										<ExtendedTooltip name="ТЗСтрокаПоискаРасширеннаяПодсказка" id="45"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ТЗСостояниеПросмотра" id="46">
+										<AdditionSource>
+											<Item>ТЗ</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТЗСостояниеПросмотраКонтекстноеМеню" id="47"/>
+										<ExtendedTooltip name="ТЗСостояниеПросмотраРасширеннаяПодсказка" id="48"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ТЗУправлениеПоиском" id="49">
+										<AdditionSource>
+											<Item>ТЗ</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ТЗУправлениеПоискомКонтекстноеМеню" id="50"/>
+										<ExtendedTooltip name="ТЗУправлениеПоискомРасширеннаяПодсказка" id="51"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ТЗСчет" id="26">
+											<DataPath>ТЗ.Счет</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТЗСчетКонтекстноеМеню" id="27"/>
+											<ExtendedTooltip name="ТЗСчетРасширеннаяПодсказка" id="52"/>
+										</InputField>
+										<InputField name="ТЗВалюта" id="28">
+											<DataPath>ТЗ.Валюта</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТЗВалютаКонтекстноеМеню" id="29"/>
+											<ExtendedTooltip name="ТЗВалютаРасширеннаяПодсказка" id="53"/>
+										</InputField>
+										<InputField name="ТЗВалютнаяСуммаОстаток" id="30">
+											<DataPath>ТЗ.ВалютнаяСуммаОстаток</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТЗВалютнаяСуммаОстатокКонтекстноеМеню" id="31"/>
+											<ExtendedTooltip name="ТЗВалютнаяСуммаОстатокРасширеннаяПодсказка" id="54"/>
+										</InputField>
+										<InputField name="ТЗСуммаОстаток" id="32">
+											<DataPath>ТЗ.СуммаОстаток</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТЗСуммаОстатокКонтекстноеМеню" id="33"/>
+											<ExtendedTooltip name="ТЗСуммаОстатокРасширеннаяПодсказка" id="55"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Группа4" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Субконто</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="56"/>
+					<ChildItems>
+						<InputField name="Счет" id="14">
+							<DataPath>Счет</DataPath>
+							<ContextMenu name="СчетКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="СчетРасширеннаяПодсказка" id="57"/>
+						</InputField>
+						<Button name="СвойстваСубконтоСчета" id="16">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СвойстваСубконтоСчета</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Получить свойства субконто счета</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="СвойстваСубконтоСчетаРасширеннаяПодсказка" id="58"/>
+						</Button>
+						<Button name="ЗаполнитьСвойстваСубконтоСчета" id="17">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗаполнитьСвойстваСубконтоСчета</CommandName>
+							<ExtendedTooltip name="ЗаполнитьСвойстваСубконтоСчетаРасширеннаяПодсказка" id="59"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="Группа5" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбор субконто</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="60"/>
+					<ChildItems>
+						<InputField name="ВидСубконто" id="9">
+							<DataPath>ВидСубконто</DataPath>
+							<ContextMenu name="ВидСубконтоКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="ВидСубконтоРасширеннаяПодсказка" id="61"/>
+						</InputField>
+						<InputField name="Субконто" id="11">
+							<DataPath>Субконто</DataPath>
+							<ChoiceParameterLinks>
+								<xr:Link>
+									<xr:Name>Отбор.Владелец</xr:Name>
+									<xr:DataPath xsi:type="xs:string">ВидСубконто</xr:DataPath>
+									<xr:ValueChange>Clear</xr:ValueChange>
+								</xr:Link>
+							</ChoiceParameterLinks>
+							<TypeLink>
+								<xr:DataPath>ВидСубконто</xr:DataPath>
+								<xr:LinkItem>0</xr:LinkItem>
+							</TypeLink>
+							<ContextMenu name="СубконтоКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="СубконтоРасширеннаяПодсказка" id="62"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="Группа6" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запись движений</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<Button name="ЗаписьДвиженийБезПроведенияДокумента" id="19">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗаписьДвиженийБезПроведенияДокумента</CommandName>
+							<ExtendedTooltip name="ЗаписьДвиженийБезПроведенияДокументаРасширеннаяПодсказка" id="64"/>
+						</Button>
+						<Button name="ЗаписьДвиженийСПомощьюНабораЗаписей" id="20">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗаписьДвиженийСПомощьюНабораЗаписей</CommandName>
+							<ExtendedTooltip name="ЗаписьДвиженийСПомощьюНабораЗаписейРасширеннаяПодсказка" id="65"/>
+						</Button>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Демонстрационная</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Остаток" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидСубконто" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид субконто</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ChartOfCharacteristicTypesRef.ВидыСубконто</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Субконто" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Субконто</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:Characteristic.ВидыСубконто</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="Счет" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Счет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ChartOfAccountsRef.ОсновнойПланСчетов</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТЗ" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Счет" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfAccountsRef.ОсновнойПланСчетов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Валюта" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валюта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВалютнаяСуммаОстаток" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валютная сумма остаток</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаОстаток" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма остаток</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НеПравильно" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не правильно</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не правильно</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НеПравильно</Action>
+		</Command>
+		<Command name="Правильно" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правильно</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правильно</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Правильно</Action>
+		</Command>
+		<Command name="СвойстваСубконтоСчета" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свойства субконто счета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свойства субконто счета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СвойстваСубконтоСчета</Action>
+		</Command>
+		<Command name="ЗаполнитьСвойстваСубконтоСчета" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить свойства субконто счета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить свойства субконто счета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьСвойстваСубконтоСчета</Action>
+		</Command>
+		<Command name="ЗаписьДвиженийБезПроведенияДокумента" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запись движений без проведения документа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запись движений без проведения документа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписьДвиженийБезПроведенияДокумента</Action>
+		</Command>
+		<Command name="ЗаписьДвиженийСПомощьюНабораЗаписей" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запись движений с помощью набора записей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запись движений с помощью набора записей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписьДвиженийСПомощьюНабораЗаписей</Action>
+		</Command>
+		<Command name="ОстаткиПоВалютнымСчетам" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остатки по валютным счетам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остатки по валютным счетам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОстаткиПоВалютнымСчетам</Action>
+		</Command>
+	</Commands>
+</Form>
